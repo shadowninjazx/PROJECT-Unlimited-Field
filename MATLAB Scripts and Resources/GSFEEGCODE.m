@@ -83,7 +83,7 @@
     
     %Write to JSON
     %{
-    file = fopen('G:\Google Science Fair 2016\Demo Website\JSON.php','wt');
+    %file = fopen('C:\DIRECTORY TO JSON FILE IN WESITE FOLDER\JSON.php','wt');
     if (y < .5 && y > 0)
     z1 = '[{"activation": "';
     z2 = '1';
@@ -111,10 +111,10 @@
     
     %Write to csv
     %{
-    csvwrite('G:\Google Science Fair 2016\Demo Website\JSON.php', '[{"activation": "0"}]');
+    %csvwrite('C:\INESRT DIRECTORY TO JSON FILE IN WEBSITE\JSON.php', '[{"activation": "0"}]');
     disp('Loop Completed')
     disp('Writing data to csv');
-    cd C:\Users\zhizh\OneDrive\Documents\MATLAB
+    %cd INSERT LINK TO DIRECTORY OF THE WEBSITE
     csvwrite('datasadr3.csv',data_rawf);
     disp('Writing finsihed');
     %}
