@@ -30,7 +30,7 @@
         
         
     <div class="nav-wrapper">
-      <a id="logo-container" href="index.html" class="brand-logo  black-text"><img style=" margin-top:8px; max-width:250px;" src="logo.png"></a>
+      <a id="logo-container" href="index.html" class="brand-logo  black-text">Project Unlimited Field</a>
       <ul class="right hide-on-med-and-down">
         <li><a class="dropdown-button waves-effect waves-light black-text" href="#!" data-activates="dropdown1">Demos<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
         <li><a class="dropdown-button waves-effect waves-light black-text" href="#!" data-activates="dropdown2">About<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
@@ -61,81 +61,41 @@
   </nav>
   </div>
   
-  
-  
   <div class="light-blue" style="width:100%;">
-  
+  <div class="row" style="width:100%;">
+  <div class="col s12 m9 l10">
   <div class="container">
-  <h2 class="white-text light" style="padding-top:200px;">PROJECT: Unlimited Field</h2>
-  <h4 class="thin" style="color:#f5f5f5;">Intelligent Adaptive Website with EEG based Brain Computer Interface</h4>
+  <h2 class="white-text light" style="padding-top:50px;">Demo Gallery</h2>
+  <h4 class="thin" style="color:#f5f5f5;">Intelligent popups when excitement is detected.</h4>
+  </div>
+  </div>
+  </div>
   </div>
   
-  </div>
-
+  <div class="row" style="width:100%;">
+  		<div class="col s12 m9 l10">
         <div class="container">
         
-        <p class="caption">A website that adapts its style in response to EEG signals captured from a sensor connected to the computer.</p>
+        <h3 class="light-blue-text light section scrollspy" style=" width:100%" id="demo">Gallery Demo</h3>
+        <p class="caption">Insert Video Here</p>
+        <a class="waves-effect waves-light btn" href="gallerydemo2.html"><i class="material-icons left">play_circle_outline</i>Start Demo</a>
+        <p class="caption">You are browsing through pictures, or products on a website, when you see an image or product that interests you, a popup will activate prompting further interaction such as buying or liking.</p>
+        <h3 class="light-blue-text light section scrollspy" style=" width:100%" id="req">Requirements</h3>
+        <p class="caption">A neurosky properly attached to the computer and with the host program running. See <a href="install.html">installation guide</a>.</p>
         
-        <div class="row">
-        <div class="col l4 m12 s12">  
-          	<div class="card">
-            	<div class="card-image">
-              	<img src="img/eeg.jpg">
-              	<span class="card-title"></span>
-            	</div>
-            	<div class="card-content">
-                <h4 class="light">Brain gives feedbacks</h4>
-              	<p>I am a very simple card. I am good at containing small bits of information.
-              	I am convenient because I require little markup to use effectively.</p>
-            	</div>
-      		</div>   
-        </div>
-        <div class="col l4 m12 s12">
-        	<div class="card">
-            	<div class="card-image">
-              	<img src="img/change.jpg">
-              	<span class="card-title"></span>
-            	</div>
-            	<div class="card-content">
-                <h4 class="light">Feedbacks drive change</h4>
-              	<p>I am a very simple card. I am good at containing small bits of information.
-              	I am convenient because I require little markup to use effectively.</p>
-            	</div>
-      		</div>
-        </div>
-        <div class="col l4 m12 s12">
-        	<div class="card">
-            	<div class="card-image">
-              	<img src="img/better.jpg">
-              	<span class="card-title"></span>
-            	</div>
-            	<div class="card-content">
-                <h4 class="light">Change inspires the better</h4>
-              	<p>I am a very simple card. I am good at containing small bits of information.
-              	I am convenient because I require little markup to use effectively.</p>
-            	</div>
-      		</div>
         </div>
         </div>
         
-        <h3 class="light-blue-text light section scrollspy" style=" width:100%">Project Video</h3>
-        <p class="caption">Intelligence is the ability to aquire and apply knowledge. For example, when we eat chocolate, our brain says it taste good; so next time when we see chocolate, we will want to eat it again. Intelligence in the context of an adaptive website is the same.</p>
-		</div>
-        
-        <div class="blue-grey">
-        <div class="container" style="padding-bottom:50px;">
-          <h2 class="white-text light" style="padding-top:50px;">Enter Demo</h2>
-          <h5 class="thin" style="color:#f5f5f5;">Requires the demo software package to be installed and connected to EEG headset. </h5>
-          <center><a class="waves-effect waves-light btn" href="demo.html">Enter</a></center>
+        <div class="col hide-on-small-only m3 l2">
+        <div class="tabs-wrapper">
+  		<ul class="section table-of-contents">
+            <li><a class="" href="#demo">Demo</a></li>
+            <li><a class="" href="#req">Requirements</a></li>
+        </ul>
         </div>
         </div>
         
-        
-        
-        
-       
-        
-	
+	</div>
     <footer class="page-footer light-blue">
           <div class="container">
             <div class="row">
@@ -166,7 +126,19 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+   var color = ["red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"];
+   var c = 0;
+   function nextColor()
+    {
+        document.getElementById("back").className = color[c] + " waves-effect waves-light";
+		document.getElementById("next").className = color[c] + " waves-effect waves-light btn";
+		c++;
+		if (c >18) {
+		c = 0;
+		};
+    }
+	</script>
 
   </body>
 </html>

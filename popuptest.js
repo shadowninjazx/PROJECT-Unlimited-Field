@@ -1,0 +1,2 @@
+
+$('#modal1').openModal();
